@@ -1,0 +1,121 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+  border: 10px solid white;
+  background-color: black;
+  color: white;
+}
+
+main header{
+  text-align: center;
+  font-size: 1.6rem;
+  border-bottom: 10px solid white;
+  padding: 12px;
+}
+
+#valores{
+  max-width: 260px;
+  margin: 2rem auto;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+#valores div{
+  margin-bottom: 1rem;
+}
+
+#valores div input{
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 8px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#valores div:first-child input{
+  padding-left: 1.8rem;
+}
+
+#valores div label{
+  position: relative;
+}
+
+#valores div:first-child label::after{
+  content: "$";
+  font-size: 1.5rem;
+  position: absolute;
+  color: black;
+  bottom: -36px;
+  left: -30px;
+}
+
+#valores button{
+  width: 200px;
+  font-size: 2rem;
+  border: none;
+  padding: 10px 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 100ms;
+}
+
+#valores button:hover{
+  background-color: lightgray;
+  color: black;
+}
+
+#valores button:active{
+  background-color: gray;
+}
+
+#resumen{
+  width: 90%;
+  background-color: white;
+  color: black;
+  left: 50%;
+  margin-bottom: 2rem;
+  transform: translateX(-50%);
+  border-radius: 16px;
+  padding: 1rem;
+  bottom: 0;
+  position: fixed;
+}
+
+#resumen *{
+  margin-bottom: 6px;
+}
+
+#resumen h2{
+  font-size: 2rem;
+}
+
+#resumen p{
+  font-size: 1.3rem;
+  font-weight: bold;
+  max-width: 400px;
+  margin-left: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+p span{
+  display: inline-block;
+  font-size: 1.3rem;
+  text-align: left;
+}
